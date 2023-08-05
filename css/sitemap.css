@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    margin: 50px;
+    text-align: center;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+}
+.link a{
+    font-size: 20px;
+    color: black;
+}

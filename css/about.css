@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo p {
+    margin-left: 16px;
+    font-size: 40px;
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+    position: relative;
+    left: 50px;
+}
+
+.logo p::before {
+    content: attr(data-item);
+    transition: all 1s ease-in-out;
+    color: #8254ff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.logo p:hover::before {
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+
+.contact p {
+    margin-right: 10px;
+}
+
+.contact a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #111111;
+}
+
+.form-control {
+    border-radius: 20px;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon a {
+    font-size: 20px;
+    margin: 15px;
+    color: #111111;
+    display: none;
+}
+
+.an {
+    display: none;
+}
+.banner-discount{
+    text-align: center;
+    background-color: #f5f5f5f5;
+    height: 60px;
+}
+.banner-discount p{
+    margin-top: 20px ;
+}
+.title {
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+}
+.meet{
+    text-align: center;
+}
+.meet .name{
+    font-size:30px ;
+}
+.card {
+    overflow: hidden;
+}
+.card:hover{
+    border: 1px solid black ;
+}
+
+#card-img {
+    transition: 1s;
+}
+
+.card:hover #card-img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card a:hover{
+    background-color: grey;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 40px;
+}
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px ;
+    margin-top: 50px;
+}
+.menu_footer ul{
+    display: flex;
+    justify-content: center;
+}
+.menu_footer ul li{
+    list-style: none;
+    margin-top: 15px;
+    margin-right:15px;
+    text-decoration: none;
+}
+.menu_footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:960px) {
+    .contact {
+        display: none;
+    }
+
+    .form-inline .form-control {
+        display: none;
+    }
+
+    .icon a {
+        display: block;
+    }
+
+    .text {
+        display: none;
+    }
+    .card{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    .menu .container {
+        display: flex;
+    }
+
+    .icon {
+        display: block;
+        display: flex;
+    }.menu_footer{
+        display: none;
+    }
+}
